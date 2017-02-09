@@ -11,3 +11,12 @@ I have tried to keep the theme at minimal, using as much as possible the origina
 4. Below the stylesheet edit box, upload the images
 5. Press save and you are done!
 
+<b>Image sizes</b>
+
+If you wish to change some of the images, the image sizes are as follows:
+
+Header: 1920x110
+Logo: 
+Sidebar:
+Sticky:
+Sub:
