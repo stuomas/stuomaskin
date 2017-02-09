@@ -15,8 +15,8 @@ I have tried to keep the theme at minimal, using as much as possible the origina
 
 If you wish to change some of the images, the image sizes are as follows:
 
-- Header: 1920x110
-- Logo: 
-- Sidebar:
-- Sticky:
-- Subicon:
+- Header: 1920x120
+- Logo: 230x75
+- Sidebar: 300x215
+- Sticky: 50x50
+- Subicon: 10x10
