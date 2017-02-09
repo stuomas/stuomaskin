@@ -1,0 +1,735 @@
+/* Hacked together by /u/stuomas for /r/Kodi. Newest version always available at github.com/stuomas/stuomaskin. */
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(135deg, #999, #fff);
+    font-family: Lato, arial, sans-serif !important;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content #siteTable,
+.content .commentarea {
+    /*spacing around link area and comment area*/
+    margin: 20px 350px 0px 12px;
+    padding: 34px 5px;
+    /*inside the area*/
+}
+
+.content .reddit-infobar {
+    background-color: rgba(250, 250, 250, 0.75);
+    width: 300px;
+    margin-left: 10px;
+    border: 1px solid #333;
+}
+
+div#siteTable {
+    padding-bottom: 10px !important;
+}
+
+#siteTable,
+.commentarea {
+    /*this makes that rounded edge for the link/comment area */
+    background-color: rgba(250, 250, 250, 0.75);
+    padding: 10px 0;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+    border-radius: 0px;
+}
+
+h2 {
+    color: #31afe1 !important;
+}
+
+h1 {
+    margin-left: 7px;
+}
+
+h4 {
+    margin: 20px 0 40px 0;
+}
+
+h5 {
+    font-family: Lato, arial, sans-serif;
+    font-size: 1.3em;
+    margin-top: 1em;
+    line-height: 1.5;
+}
+
+h6 {
+    font-family: Lato, arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-top: .8em;
+    line-height: .5;
+    padding-left: 15px;
+}
+
+h6 a:hover {
+    font-family: Lato, arial, sans-serif;
+    text-decoration: underline;
+    color: #333;
+}
+
+#header {
+    background: url(%%header%%) no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(90deg, #333, #555) !important;*/
+    height: 110px;
+    margin-bottom: 15px;
+    z-index: 1;
+    border: none;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+}
+
+
+/* Kodi Logo */
+
+span.pagename.selected,
+span.pagename.hover.redditname {
+    color: transparent;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+}
+
+.redditname a {
+    background: url(%%logo%%) no-repeat;
+    height: 75px;
+    width: 230px;
+    margin-top: 10px !important;
+    margin-left: 17px;
+}
+
+#header-bottom-left {
+    height: 24px;
+}
+
+.redditname a {
+    font-size: 0;
+    /* IMAGE FOR SIDE PANEL */
+}
+
+.thumbnail {
+    border-radius: 0 !important;
+}
+
+#header #header-img {
+    display: none;
+}
+
+#header-img-a,
+.redditname a,
+.tabmenu {
+    display: inline;
+    padding-left: 10px;
+    float: left;
+}
+
+#header-img {
+    margin-right: 0px;
+}
+
+
+/**************
+ Top Link Bar
+***************/
+
+#sr-header-area {
+    background: #31afe1 !important;
+    border-bottom: 2px solid #31afe1;
+    height: 11px;
+    line-height: 10px;
+    padding-top: 3px;
+}
+
+.sr-bar a {
+    color: #fff;
+}
+
+#sr-header-area .separator {
+    color: #fff;
+}
+
+#sr-more-link {
+    background-color: #fff;
+    color: #000;
+}
+
+#sr-header-area .srdrop .selected {
+    color: #fff;
+}
+
+
+/****************************
+ My Subreddits drop-down list
+*****************************/
+
+.icon-menu a {
+    color: #333;
+    background-color: transparent;
+}
+
+.drop-choices {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    border: 1px solid #333;
+    padding: 2px 10px;
+}
+
+.drop-choices a {
+    color: #fff !important;
+}
+
+#sr-header-area div.srdrop a.choice.bottom-option {
+    color: #fff !important;
+}
+
+#sr-header-area div.drop-choices a.choice:hover {
+    background-color: #31afe1 !important;
+    color: white !important;
+}
+
+.dropdown-title {
+    color: #333 !important;
+}
+
+.menuarea .selected {
+    color: #00634d !important;
+}
+
+
+/******************************************************
+ Tab menu (HOT, NEW, RISING, CONTROVERSIAL, TOP, etc.)
+*******************************************************/
+
+.tabmenu li a {
+    text-transform: uppercase;
+    color: #ddd;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 0 0;
+    line-height: 1.4;
+    padding: 8px;
+}
+
+.tabmenu li.selected a {
+    background-color: transparent;
+    color: #31afe1;
+    border: none;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+
+.tabmenu li a:hover {
+    color: #31afe1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 8px;
+}
+
+.tabmenu {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.15);
+    float: left;
+    padding: 12px 8px 12px 8px;
+    position: relative;
+    top: 23px;
+    left: 50px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+}
+
+
+/***********************
+ User's information bar
+************************/
+
+#header-bottom-right {
+    background: none;
+    position: absolute;
+    top: 84px;
+    right: 27px;
+}
+
+#header-bottom-right a {
+    color: #ddd;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#header-bottom-right a:hover {
+    color: #31afe1;
+    text-decoration: none;
+}
+
+
+/**************
+ Sidebar
+***************/
+
+div.titlebox span.word {
+    /*disables default text*/
+    display: none;
+}
+
+span.subscribers:before {
+    margin-left: 3px;
+    margin-right: 15px;
+    content: url(%%subicon%%);
+}
+
+span.subscribers:after {
+    font-style: italic;
+    content: " happy subscribers"
+}
+
+p.users-online span.number:after {
+    font-style: italic;
+    content: " redditors currently browsing"
+}
+
+.side:before {
+    margin-left: 0px;
+    background: url(%%sidebar%%) 300px;
+    content: "";
+    position: absolute;
+    top: 140px;
+    height: 215px;
+    width: 300px;
+    border-radius: 0px;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.34);
+}
+
+.side {
+    margin: 5px 15px 20px 0px;
+    /* side box backgroundbox margin */
+    padding: 272px 10px 0px 10px;
+    background-color: rgba(250, 250, 250, 0.75);
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+}
+
+.titlebox {
+    background-color: transparent !important;
+    color: #333;
+    margin-top: 0px;
+}
+
+.usertext-body {
+    margin-right: -4px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.titlebox a {
+    color: #31afe1;
+}
+
+.titlebox a.hover {
+    display: none;
+}
+
+.titlebox .bottom {
+    display: none;
+}
+
+.spacer .titlebox {
+    padding: 5px;
+}
+
+.titlebox form.toggle,
+.leavecontributor-button,
+.leavemoderator {
+    background-color: rgba(0, 0, 0, 0.05);
+    ;
+    color: #333;
+    padding: 5px;
+}
+
+
+/* Fix for stylesheet edit page */
+
+.sheets {
+    max-width: 985px;
+}
+
+.searchpane {
+    margin-top: -50px;
+    margin-left: -150px !important;
+}
+
+.search-result-group {
+    background-color: rgba(250, 250, 250, 0.75);
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+    border-radius: 0px;
+    margin: 25px 0px 0px 35px !important;
+    padding: 34px 5px;
+    /*inside the area*/
+}
+
+form#search {
+    border-radius: 0px;
+    min-height: 40px;
+    margin-top: 25px;
+    margin-left: 154px;
+}
+
+#search input[type="submit"] {
+    /* Searchbox icon */
+    position: relative;
+    right: 20px;
+}
+
+#search input[type="text"] {
+    font-family: Lato, arial, sans-serif;
+    background-color: #035165;
+    border: 0px solid #0088BB;
+    border-radius: 0px;
+    font-size: 18px !important;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    height: 46px;
+    width: 146px !important;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.24);
+    color: #fff !important;
+}
+
+#searchexpando.infobar {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    border-radius: 0;
+}
+
+.sidecontentbox .content {
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+/* submit buttons derived from Naut */
+
+.morelink {
+    margin-top: -75px;
+    height: 50px;
+    border-radius: 0px;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.sidebox.submit.submit-text .morelink {
+    margin-left: 154px;
+}
+
+.morelink a {
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.submit-text .morelink a:before {
+    text-align: center;
+    font-size: 18px;
+    content: "Submit Text"
+}
+
+.submit-link .morelink a:before {
+    text-align: center;
+    font-size: 18px;
+    content: "Submit Link"
+}
+
+.morelink .nub {
+    display: none
+}
+
+.submit .morelink {
+    position: absolute;
+    top: 442px;
+    font-size: 0;
+    width: 146px
+}
+
+.sidebox.create {
+    display: none;
+    /* margin-top: 100px;
+    background-color: transparent;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.24); */
+}
+
+.side .morelink a {
+    border-radius: 0px;
+    background-color: #203d44 !important;
+    color: #eee;
+}
+
+.side .morelink a:hover {
+    background-color: #31afe1 !important;
+    color: white;
+}
+
+
+/* custom subscribe button derived from Naut */
+
+.titlebox .fancy-toggle-button {
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 0;
+    position: absolute;
+    margin-left: -5px;
+    top: 427px;
+    border-radius: 0px
+}
+
+.titlebox .fancy-toggle-button .active {
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    display: block;
+    height: 46px;
+    width: 122px;
+    border-radius: 0px;
+    line-height: 45px;
+    padding: 0 12px;
+    text-transform: capitalize
+}
+
+.titlebox .fancy-toggle-button .active.add {
+    background: #035165;
+    color: #fff
+}
+
+.titlebox .fancy-toggle-button .active.remove {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff
+}
+
+.titlebox .fancy-toggle-button .active:hover {
+    background-color: #31afe1;
+}
+
+.titlebox .fancy-toggle-button .active.remove:hover {
+    color: #333
+}
+
+.fancy-toggle-button:hover {
+    color: #333
+}
+
+
+/*********************
+ Page Specific tweaks
+**********************/
+
+
+/* Search Page */
+
+#previoussearch #search input[type="text"] {
+    background-color: rgba(250, 250, 250, 0.75);
+    color: #555 !important;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+}
+
+
+/* Shift sidebar back up when on Search page */
+
+body.search-page .side {
+    padding-top: 354px;
+}
+
+
+/* Comment page */
+
+.link .usertext .md {
+    border: 1px solid #BBCCDD;
+    background: #fcfcfc;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.linkinfo {
+    /* The box that appears under the search area */
+    border: 1px solid #BBCCDD;
+    background: #fcfcfc;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.panestack-title {
+    /* Prevents seperator bleeding into sidebar */
+    margin-right: 365px;
+}
+
+.keyHighlight {
+    background-color: transparent !important;
+}
+
+.link.last-clicked {
+    /* Front page */
+    border: none;
+}
+
+#siteTable.sitetable.linklisting {
+    padding-top: 15px;
+}
+
+.thing.stickied a.title,
+.thing.stickied a.title:visited {
+    color: #009c7a !important;
+}
+
+.thing .title {
+    color: #03556b
+}
+
+.thing .title.loggedin.click:visited,
+.thing .title.loggedin.click,
+.thing .title.loggedin:visited,
+.thing .title.click,
+.thing .title:visited {
+    color: #047693 !important;
+}
+
+.stickied .thumbnail {
+    background: url(%%sticky%%) 10px no-repeat;
+}
+
+p.title {
+    margin: 0px 340px 15px 0px;
+}
+
+.listing-page .entry {
+    border-bottom: 1px dotted #BBCCDD;
+}
+
+.footer-parent {
+    /*  background: url(%%footer%%); */
+    background: linear-gradient(170deg, #111, #666, #222);
+    margin-bottom: -100px;
+    color: #fff;
+}
+
+p.bottommenu {
+    padding-bottom: 20px;
+    color: #eee;
+}
+
+.footer-parent a,
+.footer-parent a:visited {
+    /* Footer */
+    color: #fff !important;
+}
+
+
+/* Submit page */
+
+textarea {
+    background: none;
+    border: 1px solid #777;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+input {
+    background: none;
+}
+
+.roundfield {
+    /* boxes that surround url/title fields */
+    background: #fcfcfc;
+    border: 1px solid 777;
+    border-radius: 0;
+}
+
+#link-desc {
+    /* Link description boxes */
+    background: #33AADD;
+    border: 1px solid #0088BB;
+    padding: 10px;
+}
+
+#text-desc {
+    background: #33AADD;
+    border: 1px solid #0088BB;
+    padding: 10px;
+}
+
+ul.tabmenu.formtab {
+    /* Text / link tabs */
+    position: relative;
+    left: 3px;
+    top: 15px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    background: none;
+}
+
+ul.tabmenu.formtab li a {
+    border: 1px solid #33AADD;
+    background: #fcfcfc !important;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+ul.tabmenu.formtab li.selected a {
+    border: 1px solid #33AADD;
+    color: #fff;
+    background: #444 !important;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.content .tabmenu {
+    /* Tabs on the mod's edit flair page */
+    position: relative;
+    right: 550px;
+    top: 0;
+}
+
+.content .tabmenu li.selected a {
+    color: #31afe1 !important;
+}
+
+.content .tabmenu a:hover {
+    color: #31afe1 !important;
+}
+
+.menuarea li.selected a {
+    color: #31afe1;
+}
+
+.link .score.likes {
+    color: #31afe1;
+}
+
+.usertext p {
+    font-size: 13px !important;
+    color: #333;
+}
+
+p#noresults {
+    color: #333;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+div.rounded.gold-accent.comment-visits-box {
+    /* Box below comment box ("Highlight comments...") */
+    font-style: italic;
+    margin-left: 10px;
+    border-radius: 0;
+    border: 0px solid #333;
+    background-color: rgba(250, 250, 250, 0.75);
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.44);
+}
