@@ -20,3 +20,5 @@ If you wish to change some of the images, the image sizes are as follows:
 - Sidebar: 300x215
 - Sticky: 50x50
 - Subicon: 10x10
+
+Disclaimer: I don't own rights to any of the pictures. Kodi logo is a registered trademark, sidebar picture is probably too, header is made by me using a FanArt pictrure from http://addons.kodi.tv/show/resource.images.skinbackgrounds.clear/, i hope he doesn't mind. Sticky icon i made using Kodi's trademark logo, and subicon I made myself. I will remove the trademarked images from my repository after they are not needed here anymore. Now they are here for simplifying commissioning.
