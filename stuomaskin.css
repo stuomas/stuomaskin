@@ -597,8 +597,21 @@ body.search-page .side {
     color: #047693 !important;
 }
 
-.stickied .thumbnail {
-    background: url(%%sticky%%) 10px no-repeat;
+.stickied .thumbnail { 
+    background: url(%%sticky%%) 10px no-repeat; 
+    margin-left: -10px;
+}
+
+.thumbnail {
+    margin-left: -10px;  
+}
+
+.thumbnail img {
+    border-radius: 5px;
+    width:50px !important;
+    height:50px !important;
+    position: absolute;    
+    margin-left: 10px !important;
 }
 
 p.title {
