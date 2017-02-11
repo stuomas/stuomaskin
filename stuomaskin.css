@@ -630,7 +630,7 @@ p.title {
 
 .footer-parent {
     /*  background: url(%%footer%%); */
-    background: linear-gradient(170deg, #111, #666, #222);
+    background: linear-gradient(0deg, #111, #333, #111);
     margin-bottom: -100px;
     color: #fff;
 }
