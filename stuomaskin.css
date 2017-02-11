@@ -381,7 +381,7 @@ form#search {
 
 #search input[type="submit"] {  /* Searchbox icon */
     position: relative;
-    right: 20px;
+    right: 22px;
 }
 
 #search input[type="text"] {
