@@ -29,7 +29,7 @@ body {
 }
 
 .content .reddit-infobar {
-    background-color: rgba(250,250,250,0.75);
+    background-color: rgba(255,255,255,0.9);
     width: 300px;
     margin-left: 10px;
     border: 1px solid #333;
@@ -42,7 +42,7 @@ padding-bottom: 10px !important;
 #siteTable,
 .commentarea {
     /*this makes that rounded edge for the link/comment area */
-    background-color: rgba(250,250,250,0.75);
+    background-color: rgba(255,255,255,0.9);
     padding: 10px 0;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
     border-radius: 0px;
@@ -302,7 +302,7 @@ p.users-online span.number:after {
     content: "";
     position: absolute;
     top: 140px;
-    height: 215px;
+    height: 225px;
     width: 300px;
     border-radius: 0px;
     box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.34);
@@ -347,7 +347,7 @@ p.users-online span.number:after {
 .titlebox form.toggle,
 .leavecontributor-button,
 .leavemoderator {
-    background-color: rgba(0,0,0,0.05);;
+    background-color: rgba(0,0,0,0.05);
     color: #333;
     padding: 5px;
 }
@@ -375,7 +375,7 @@ p.users-online span.number:after {
 form#search {
     border-radius: 0px;
     min-height: 40px;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-left: 154px;
 }
 
@@ -413,7 +413,7 @@ form#search {
 /* submit buttons derived from Naut */
 
 .morelink {
-    margin-top: -75px;
+    margin-top: -65px;
     height: 50px;
     border-radius: 0px;
     line-height: 50px;
@@ -480,7 +480,7 @@ form#search {
     margin: 0;
     position: absolute;
     margin-left: -5px;
-    top: 427px;
+    top: 437px;
     border-radius: 0px
 }
 
@@ -581,7 +581,7 @@ body.search-page .side {
 .thing .title.loggedin:visited,
 .thing .title.click,
 .thing .title:visited {
-    color: #047693 !important;
+    color: #1155ff !important;
 }
 
 .stickied .thumbnail { 
@@ -606,7 +606,7 @@ p.title {
 }
 
 .listing-page .entry {
-    border-bottom: 1px dotted #BBCCDD;
+    border-bottom: 0px dotted #BBCCDD; /* Post separator */
 }
 
 .footer-parent {
@@ -734,6 +734,45 @@ div.rounded.gold-accent.comment-visits-box { /* Box below comment box ("Highligh
 .thumbnail {
    
     border-radius: 7px !important;
+}
+
+.link .score {
+  text-align: center;
+  color: #31afe1; 
+}
+
+.link.odd {
+    background-color: rgba(100,100,255,0.03);
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+span.rank { /* Hide ordinals from posts */
+    display: none;
+}
+
+.entry .buttons li a { 
+    font-size: 13px; 
+    font-weight: 100;
+}
+.entry .buttons li a.comments { 
+    color: #31afe1;
+    font-weight: 700;
+}
+.entry .tagline { font-style: italic; }
+
+.side .md h1,
+.side .md h1 a, 
+.side .md h2,
+.side .md h2 a{
+    background-color: #31afe1;
+    color: #fff !important;
+    text-align: center;
+}
+.side .titlebox .md h1,
+.side .titlebox .md h2 {
+    margin: 15px -1px 15px -5px !important;
+    padding: 7px;
 }
 
 /* Moderator nickname color - add new line for new mods and change name */
