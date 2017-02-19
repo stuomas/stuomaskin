@@ -17,7 +17,7 @@ If you wish to change some of the images, the image sizes are as follows:
 
 - Header: 1920x120
 - Logo: 230x75
-- Sidebar: 300x215
+- Sidebar: 300x225 (4:3)
 - Sticky: 50x50
 - Subicon: 10x10
 
