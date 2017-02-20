@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #999, #fff);
+    background: linear-gradient(135deg, #888, #fff);
     font-family: Lato, arial, sans-serif !important;
     height: 100%;
     margin: 0;
@@ -22,10 +22,17 @@ body {
     /*inside the area*/
 }
 
+/* Reddit's featured post */
 .organic-listing {
     background-color: rgba(250,250,250,0.75);
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
     margin: 20px 350px 0px 12px !important;
+}
+
+/* Reddit's subscribe to newsletter post */
+.newsletter-container {
+    margin-left: 10px;
+    margin-right: 350px;
 }
 
 .content .reddit-infobar {
@@ -115,7 +122,7 @@ span.pagename.selected, span.pagename.hover.redditname {
 
 .redditname a {
     font-size: 0;
-    /* IMAGE FOR SIDE PANEL */
+    /* SMALL IMAGE/TEXT FOR SIDE PANEL */
 }
 
 .thumbnail {
@@ -144,6 +151,7 @@ span.pagename.selected, span.pagename.hover.redditname {
 ***************/
 
 #sr-header-area {
+
     background: #31afe1 !important;
     border-bottom: 2px solid #31afe1;
     height: 11px;
@@ -216,7 +224,7 @@ span.pagename.selected, span.pagename.hover.redditname {
     background-color: transparent;
     border-radius: 0px;
     border: none;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 400;
     margin: 0 0 0 0;
     line-height: 1.4;
@@ -240,12 +248,13 @@ span.pagename.selected, span.pagename.hover.redditname {
 
 .tabmenu {
     border-radius: 0px;
-    background-color: rgba(0,0,0,0.15);
+    background: linear-gradient(90deg, rgba(255,255,255,0.05), transparent);
+    /*background-color: rgba(80,80,80,0.15);*/
     float: left;
-    padding: 12px 8px 12px 8px;
+    padding: 10px 8px 10px 8px;
     position: relative;
-    top: 23px;
-    left: 50px;
+    top: 25px;
+    left: 20px;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
 }
 
@@ -257,14 +266,13 @@ span.pagename.selected, span.pagename.hover.redditname {
 #header-bottom-right {
     background: none;
     position: absolute;
-    top: 88px;
-    right: 27px;
+    top: 109px;
+    right: 12px;
 }
 
 #header-bottom-right a {
-    color: #ddd;
+    color: #333;
     font-size: 10px;
-    font-weight: bold;
 }
 
 #header-bottom-right a:hover {
@@ -298,7 +306,7 @@ p.users-online span.number:after {
 
 .side:before {
     margin-left: 0px;
-    background: url(%%sidebar%%) 300px;
+    background: url(%%sidebarimg%%) 300px;
     content: "";
     position: absolute;
     top: 140px;
@@ -308,6 +316,9 @@ p.users-online span.number:after {
     box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.34);
 }
 
+.side::before:hover {
+    content: "";
+} 
 .side {
     margin: 5px 15px 20px 0px;
     /* side box backgroundbox margin */
@@ -324,8 +335,37 @@ p.users-online span.number:after {
 
 .usertext-body {
     margin-right: -4px;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
+}
+
+.content .commentarea .comment,
+.content .commentarea .comment .comment .comment,
+.content .commentarea .comment .comment .comment .comment .comment,
+.content .commentarea .comment .comment .comment .comment .comment .comment .comment,
+.content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: #f9f9f9 !important;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 8px;
+}
+.content .commentarea .comment .comment,
+.content .commentarea .comment .comment .comment .comment,
+.content .commentarea .comment .comment .comment .comment .comment .comment,
+.content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: #fff !important;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.new-comment .usertext-body {
+    background-color: #31afe1;
+    border: none;
+    margin: -1px 0;
+}
+
+.content .commentarea {
+    padding-right: 30px;
 }
 
 .titlebox a {
@@ -614,6 +654,7 @@ p.title {
     background: linear-gradient(0deg, #111, #333, #111);
     margin-bottom: -100px;
     color: #fff;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
 }
 
 p.bottommenu {
@@ -723,12 +764,11 @@ p#noresults {
 }
 
 div.rounded.gold-accent.comment-visits-box { /* Box below comment box ("Highlight comments...") */
-    font-style: italic;
     margin-left: 10px;
     border-radius: 0;
     border: 0px solid #333;
-    background-color: rgba(250,250,250,0.75);
-    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.44);
+    background-color: rgba(250,250,250,0);
+    color: #333;
 }
 
 .thumbnail {
@@ -762,17 +802,25 @@ span.rank { /* Hide ordinals from posts */
 .entry .tagline { font-style: italic; }
 
 .side .md h1,
-.side .md h1 a, 
-.side .md h2,
-.side .md h2 a{
+.side .md h2 {
     background-color: #31afe1;
     color: #fff !important;
     text-align: center;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.34);
 }
 .side .titlebox .md h1,
 .side .titlebox .md h2 {
     margin: 15px -1px 15px -5px !important;
     padding: 7px;
+}
+
+.side .md h1 a, .side .md h2 a {
+    color: #fff;
+} 
+
+/* Padding for votes number so high number isn't half hidden */
+.midcol {
+    padding-right: 12px;
 }
 
 /* Moderator nickname color - add new line for new mods and change name */
