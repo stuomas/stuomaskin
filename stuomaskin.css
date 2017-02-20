@@ -306,7 +306,7 @@ p.users-online span.number:after {
 
 .side:before {
     margin-left: 0px;
-    background: url(%%sidebarimg%%) 300px;
+    background: url(%%sidebar%%) 300px;
     content: "";
     position: absolute;
     top: 140px;
