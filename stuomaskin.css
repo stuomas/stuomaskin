@@ -218,13 +218,17 @@ span.pagename.selected, span.pagename.hover.redditname {
  Tab menu (HOT, NEW, RISING, CONTROVERSIAL, TOP, etc.)
 *******************************************************/
 
+.tabmenu li:last-child {
+    display:none;
+}
+
 .tabmenu li a {
     text-transform: uppercase;
     color: #ddd;
     background-color: transparent;
     border-radius: 0px;
     border: none;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     margin: 0 0 0 0;
     line-height: 1.4;
@@ -254,8 +258,12 @@ span.pagename.selected, span.pagename.hover.redditname {
     padding: 10px 8px 10px 8px;
     position: relative;
     top: 25px;
-    left: 20px;
+    left: 40px;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+}
+
+.comments-page .tabmenu {
+    display: none;
 }
 
 
@@ -306,7 +314,7 @@ p.users-online span.number:after {
 
 .side:before {
     margin-left: 0px;
-    background: url(%%sidebar%%) 300px;
+    background: url(%%sidebarimg%%) 300px;
     content: "";
     position: absolute;
     top: 140px;
@@ -563,6 +571,16 @@ form#search {
  Page Specific tweaks
 **********************/
 
+.submit-page .content h1 {
+    color: #fff;
+}
+
+.submit-page .content .submit_text h1 {
+    color: #333;
+    margin-left: 0;
+  
+}
+
 /* Search Page */
 #previoussearch #search input[type="text"] {
     background-color: rgba(250,250,250,0.75);
@@ -615,13 +633,13 @@ body.search-page .side {
     color: #009c7a !important;
 }
 
-.thing .title { color: #03556b}
+.thing .title { color: #1B61A8}
 .thing .title.loggedin.click:visited,
 .thing .title.loggedin.click,
 .thing .title.loggedin:visited,
 .thing .title.click,
 .thing .title:visited {
-    color: #1155ff !important;
+    color: #626785 !important;
 }
 
 .stickied .thumbnail { 
