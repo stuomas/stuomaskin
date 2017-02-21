@@ -6,12 +6,16 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #888, #fff);
+    background: linear-gradient(135deg, #777, #fff);
     font-family: Lato, arial, sans-serif !important;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#siteTable.linklisting {
+    padding-top: 37px !important;
 }
 
 .content #siteTable,
@@ -26,13 +30,12 @@ body {
 .organic-listing {
     background-color: rgba(250,250,250,0.75);
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
-    margin: 20px 350px 0px 12px !important;
+    margin: 75px 350px 0px 12px !important;
 }
 
 /* Reddit's subscribe to newsletter post */
 .newsletter-container {
-    margin-left: 10px;
-    margin-right: 350px;
+    margin: 55px 350px 0px 11px;
 }
 
 .content .reddit-infobar {
@@ -42,8 +45,16 @@ body {
     border: 1px solid #333;
 }
 
+/* Promoted-page "want to advertise?" -box */
+.reddit-infobar.md-container-small{
+    position: absolute;
+    margin-top: -88px;
+    margin-left: 280px;
+    z-index: 10;
+}
+
 div#siteTable {
-padding-bottom: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 #siteTable,
@@ -53,6 +64,15 @@ padding-bottom: 10px !important;
     padding: 10px 0;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
     border-radius: 0px;
+}
+
+.controversial-page .menuarea, .top-page .menuarea {
+    position: absolute;
+    margin-top: -23px;
+}
+
+.dropdown-title {
+    color: #eee;
 }
 
 h2 {
@@ -187,7 +207,7 @@ span.pagename.selected, span.pagename.hover.redditname {
 }
 
 .drop-choices {
-    background-color: rgba(0,0,0,0.75) !important;
+    background-color: rgba(0,0,0,0.75);
     border: 1px solid #333;
     padding: 2px 10px;
 }
@@ -205,22 +225,28 @@ span.pagename.selected, span.pagename.hover.redditname {
     color: white !important;
 }
 
-
-.dropdown-title {
-    color: #333 !important;
-}
 .menuarea .selected {
-    color: #00634d !important;
+    color: #31afe1 !important;
+    text-decoration: none !important;
+}
+
+.menuarea .drop-choices {
+    position: relative;
+    background-color: rgba(0,0,0,0.75);
+    border: 1px solid #333;
+    width: 150px;
+    margin-top: -20px;
+}
+
+.menuarea .drop-choices a.choice:hover {
+    background-color: #31afe1 !important;
+    color: white !important;
 }
 
 
 /******************************************************
  Tab menu (HOT, NEW, RISING, CONTROVERSIAL, TOP, etc.)
 *******************************************************/
-
-.tabmenu li:last-child {
-    display:none;
-}
 
 .tabmenu li a {
     text-transform: uppercase;
@@ -239,27 +265,27 @@ span.pagename.selected, span.pagename.hover.redditname {
     background-color: transparent;
     color: #31afe1;
     border: none;
-    font-weight: 600;
+    font-weight: 900;
     padding-bottom: 2px;
 }
 
 .tabmenu li a:hover {
     color: #31afe1;
-    background-color: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     border: none;
     padding: 8px;
 }
 
 .tabmenu {
+    width: 75vw;
     border-radius: 0px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.05), transparent);
-    /*background-color: rgba(80,80,80,0.15);*/
+   /* background: linear-gradient(90deg, rgba(255,255,255,0.05), transparent);*/
+    background: linear-gradient(90deg, #333, transparent);
     float: left;
-    padding: 10px 8px 10px 8px;
-    position: relative;
-    top: 25px;
-    left: 40px;
-    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+    padding: 10px 0px 10px 8px;
+    position: absolute;
+    top: 125px;
+    left: 16px;
 }
 
 .comments-page .tabmenu {
@@ -272,14 +298,21 @@ span.pagename.selected, span.pagename.hover.redditname {
 ************************/
 
 #header-bottom-right {
-    background: none;
+    background: rgba(49,175,225, 0.20);
     position: absolute;
-    top: 109px;
-    right: 12px;
+    top: 16px;
+    right: 0px;
+    padding-left: 7px;
+    padding-right: 5px;
+    border: 1px solid #31afe1;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 10px;
+    margin-bottom: 72px;
 }
 
 #header-bottom-right a {
-    color: #333;
+    color: #ccc;
     font-size: 10px;
 }
 
@@ -288,6 +321,9 @@ span.pagename.selected, span.pagename.hover.redditname {
     text-decoration: none;
 }
 
+.userkarma, .score, .karma {
+    color: #31afe1;
+}
 
 /**************
  Sidebar
@@ -350,7 +386,7 @@ p.users-online span.number:after {
 .content .commentarea .comment .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background: #f9f9f9 !important;
+    background: #f5f5ff !important;
     border: 1px solid #ccc;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -448,7 +484,9 @@ form#search {
 }
 
 #searchexpando.infobar {
-    background: rgba(255, 255, 255, 0.2);
+    margin-left: -154px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
     border: 0px;
     border-radius: 0;
 }
@@ -492,6 +530,21 @@ form#search {
     content: "Submit Link"
 }
 
+
+.submit-text .morelink:hover a:before {
+    color: #31afe1;
+    text-align: center;
+    font-size: 18px;
+    content: "NO PIRACY!"
+}
+
+.submit-link .morelink:hover a:before {
+    color: #31afe1;
+    text-align: center;
+    font-size: 18px;
+    content: "NO PIRACY!"
+}
+
 .morelink .nub {
     display: none
 }
@@ -517,7 +570,7 @@ form#search {
 }
 
 .side .morelink a:hover {
-    background-color: #203d44 !important;
+    background-color: #333 !important;
     color: white;
 }
 
@@ -551,25 +604,68 @@ form#search {
 }
 
 .titlebox .fancy-toggle-button .active.remove {
-    background: rgba(255, 255, 255, 0.2);
-    color: #aaa
+    background: #f8f8f8;
+    color: #888
 }
 
 .titlebox .fancy-toggle-button .active:hover {
-    background-color: #999;
+    background-color: #333;
+    color: #31afe1;
 }
 
 .titlebox .fancy-toggle-button .active.remove:hover {
-    color: #333
+    color: #31afe1;
 }
 
 .fancy-toggle-button:hover {
-    color: #333
+    color: #333;
+}
+
+.titlebox .fancy-toggle-button a.active.remove:hover {
+     font-size: 0; 
+     content: '';
+}
+
+.titlebox .fancy-toggle-button a.active.remove:hover:before {
+    font-size: 18px;
+    color: #31afe1;
+    content: ":(";
 }
 
 /*********************
  Page Specific tweaks
 **********************/
+
+div.wiki-page-content.md-container {
+    margin-top: 40px;
+    color: #eee;
+}
+
+.submit-page .btn {
+    font-size: 40px;
+    background-color: #31afe1;
+    border-radius: 0;
+    color: #fff;
+    padding: 5px 0px 10px 0px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.64); 
+    width: 620px;
+}
+
+.submit-page .btn:hover {
+    background-color: #333;
+    color: #31afe1;
+}
+
+.submit-page .btn:active {
+    transform: scale(0.98);
+}
+
+.submit-page .content a {
+    color: #31afe1;
+}
 
 .submit-page .content h1 {
     color: #fff;
@@ -578,7 +674,15 @@ form#search {
 .submit-page .content .submit_text h1 {
     color: #333;
     margin-left: 0;
-  
+}
+
+.submit-page .roundfield, .submit-page .infobar {
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74); 
+    width: 600px;
+}
+
+.submit-page .roundfield-content .input, .submit-page .roundfield-content .title, .submit-page .roundfield-content #sr-autocomplete { 
+    width: 593px;
 }
 
 /* Search Page */
@@ -707,44 +811,66 @@ input {
 
 #link-desc {
     /* Link description boxes */
-    background: #33AADD;
-    border: 1px solid #0088BB;
+    background: #31afe1;
     padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #333;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    box-shadow: none;
+}
+
+#link-desc:after {
+    content: " ABSOLUTELY ZERO TOLERANCE FOR PIRACY! This subreddit does not support discussion or links pertaining to gray area or illegal add-ons (such as genesis or icefilms) for Kodi made by 3rd party developers. Any such links or discussion will be removed. For discussion of those add-ons, feel free to visit /r/Addons4Kodi.";
 }
 
 #text-desc {
-    background: #33AADD;
-    border: 1px solid #0088BB;
+    background: #31afe1;
     padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #333;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    box-shadow: none;
 }
+
+#text-desc:after {
+    content: " ABSOLUTELY ZERO TOLERANCE FOR PIRACY! This subreddit does not support discussion or links pertaining to gray area or illegal add-ons (such as genesis or icefilms) for Kodi made by 3rd party developers. Any such links or discussion will be removed. For discussion of those add-ons, feel free to visit /r/Addons4Kodi.";
+}
+
 
 ul.tabmenu.formtab {
     /* Text / link tabs */
-    position: relative;
-    left: 3px;
-    top: 15px;
-    padding: 5px 5px 5px 5px;
+    position: absolute;
+    left: 5px;
+    top: 166px;
+    padding: 5px;
     border-radius: 0;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    border-bottom: none;
     background: none;
+    box-shadow: none;
 }
 
 ul.tabmenu.formtab li a {
-    border: 1px solid #33AADD;
-    background: #fcfcfc !important;
-    padding: 3px;
-    font-size: 12px;
+    border: 1px solid #333;
+    border-bottom: none;
+    color: #31afe1;
+    background: #444 !important;
+    padding: 5px;
+    font-size: 20px;
     font-weight: 400;
-    color: #333;
 }
 
 ul.tabmenu.formtab li.selected a {
-    border: 1px solid #33AADD;
-    color: #fff;
-    background: #444 !important;
-    padding: 3px;
-    font-size: 12px;
+    border: 1px solid #333;
+    border-bottom: none;
+    background: #31afe1 !important;
+    padding: 5px;
+    font-size: 20px;
     font-weight: 400;
+    color: #fff !important;
 }
 
 .content .tabmenu {
@@ -790,7 +916,6 @@ div.rounded.gold-accent.comment-visits-box { /* Box below comment box ("Highligh
 }
 
 .thumbnail {
-   
     border-radius: 7px !important;
 }
 
@@ -817,7 +942,16 @@ span.rank { /* Hide ordinals from posts */
     color: #31afe1;
     font-weight: 700;
 }
-.entry .tagline { font-style: italic; }
+
+.entry .tagline { 
+    font-style: italic; 
+}
+
+.entry .tagline a { 
+    font-style: normal; 
+    font-weight: 700;
+}
+
 
 .side .md h1,
 .side .md h2 {
