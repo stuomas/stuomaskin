@@ -28,4 +28,4 @@ I'm quite happy with the design, but the CSS is in some cases a bit hacky, what 
 
 
 <b>Disclaimer</b>
-I don't own rights to any of the pictures. Kodi logo is a registered trademark, sidebar picture is FanArt from Kodi forums, header is made by me using a FanArt pictrure from http://addons.kodi.tv/show/resource.images.skinbackgrounds.clear/, i hope he doesn't mind. Sticky icon i made using Kodi's trademark logo, and subicon I made myself. I will remove the trademarked images from my repository after they are not needed here anymore. Now they are here for simplifying commissioning.
+I don't own rights to any of the pictures. Logo I made myself (idea stolen of course), sidebar picture is FanArt from Kodi forums, header I made myself using a FanArt pictrures from http://addons.kodi.tv/show/resource.images.skinbackgrounds.clear/. Sticky icon i made using Kodi's trademark logo, and subicon I made myself.
