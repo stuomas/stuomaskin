@@ -26,27 +26,35 @@ body {
     /*inside the area*/
 }
 
+
 /* Reddit's featured post */
+
 .organic-listing {
-    background-color: rgba(250,250,250,0.75);
+    background-color: rgba(250, 250, 250, 0.75);
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
-    margin: 75px 350px 0px 12px !important;
+    margin: 20px 350px 0px 12px !important;
+    padding-top: 35px;
+    border: none;
 }
 
+
 /* Reddit's subscribe to newsletter post */
+
 .newsletter-container {
     margin: 55px 350px 0px 11px;
 }
 
 .content .reddit-infobar {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 300px;
     margin-left: 10px;
     border: 1px solid #333;
 }
 
+
 /* Promoted-page "want to advertise?" -box */
-.reddit-infobar.md-container-small{
+
+.reddit-infobar.md-container-small {
     position: absolute;
     margin-top: -88px;
     margin-left: 280px;
@@ -60,13 +68,14 @@ div#siteTable {
 #siteTable,
 .commentarea {
     /*this makes that rounded edge for the link/comment area */
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 0;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
     border-radius: 0px;
 }
 
-.controversial-page .menuarea, .top-page .menuarea {
+.controversial-page .menuarea,
+.top-page .menuarea {
     position: absolute;
     margin-top: -23px;
 }
@@ -82,6 +91,7 @@ h2 {
 h1 {
     margin-left: 7px;
 }
+
 h4 {
     margin: 20px 0 40px 0;
 }
@@ -119,9 +129,11 @@ h6 a:hover {
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
 }
 
+
 /* Kodi Logo */
 
-span.pagename.selected, span.pagename.hover.redditname {
+span.pagename.selected,
+span.pagename.hover.redditname {
     color: transparent;
     position: relative;
     top: 50px;
@@ -171,12 +183,15 @@ span.pagename.selected, span.pagename.hover.redditname {
 ***************/
 
 #sr-header-area {
-
     background: #31afe1 !important;
     border-bottom: 2px solid #31afe1;
-    height: 11px;
-    line-height: 10px;
+    height: 13px;
+    line-height: 12px;
     padding-top: 3px;
+}
+
+#sr-header-area .width-clip {
+    margin-right: 250px;
 }
 
 .sr-bar a {
@@ -188,7 +203,8 @@ span.pagename.selected, span.pagename.hover.redditname {
 }
 
 #sr-more-link {
-    background-color: #fff;
+    display: none;
+    background-color: transparent;
     color: #000;
 }
 
@@ -201,13 +217,13 @@ span.pagename.selected, span.pagename.hover.redditname {
  My Subreddits drop-down list
 *****************************/
 
-.icon-menu a { 
-    color: #333; 
+.icon-menu a {
+    color: #333;
     background-color: transparent;
 }
 
 .drop-choices {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid #333;
     padding: 2px 10px;
 }
@@ -232,7 +248,7 @@ span.pagename.selected, span.pagename.hover.redditname {
 
 .menuarea .drop-choices {
     position: relative;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid #333;
     width: 150px;
     margin-top: -20px;
@@ -271,15 +287,16 @@ span.pagename.selected, span.pagename.hover.redditname {
 
 .tabmenu li a:hover {
     color: #31afe1;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     border: none;
     padding: 8px;
 }
 
 .tabmenu {
-    width: 75vw;
+    width: calc(100% - 378px);
+    /* Keeps the width always the same as the linklisting area */
     border-radius: 0px;
-   /* background: linear-gradient(90deg, rgba(255,255,255,0.05), transparent);*/
+    /* background: linear-gradient(90deg, rgba(255,255,255,0.05), transparent);*/
     background: linear-gradient(90deg, #333, transparent);
     float: left;
     padding: 10px 0px 10px 8px;
@@ -298,32 +315,30 @@ span.pagename.selected, span.pagename.hover.redditname {
 ************************/
 
 #header-bottom-right {
-    background: rgba(49,175,225, 0.20);
+    background: linear-gradient(90deg, #31afe1, rgba(0, 0, 0, 0.5));
     position: absolute;
-    top: 16px;
+    top: -2px;
     right: 0px;
-    padding-left: 7px;
+    padding-left: 30px;
     padding-right: 5px;
-    border: 1px solid #31afe1;
-    border-top: none;
-    border-right: none;
-    border-radius: 0 0 0 10px;
-    margin-bottom: 72px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 92px;
+    color: #fff;
 }
 
-#header-bottom-right a {
-    color: #ccc;
+#header-bottom-right a,
+#header-bottom-right .user,
+#header-bottom-right .separator {
+    color: #fff;
     font-size: 10px;
 }
 
 #header-bottom-right a:hover {
-    color: #31afe1;
+    color: #f00;
     text-decoration: none;
 }
 
-.userkarma, .score, .karma {
-    color: #31afe1;
-}
 
 /**************
  Sidebar
@@ -333,11 +348,13 @@ div.titlebox span.word {
     /*disables default text*/
     display: none;
 }
+
 span.subscribers:before {
     margin-left: 3px;
     margin-right: 15px;
     content: url(%%subicon%%);
 }
+
 span.subscribers:after {
     font-style: italic;
     content: " happy subscribers"
@@ -360,14 +377,11 @@ p.users-online span.number:after {
     box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.34);
 }
 
-.side::before:hover {
-    content: "";
-} 
 .side {
-    margin: 5px 15px 20px 0px;
+    margin: 5px 17px 20px 0px;
     /* side box backgroundbox margin */
     padding: 272px 10px 0px 10px;
-    background-color: rgba(250,250,250,0.75);
+    background-color: rgba(250, 250, 250, 0.75);
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
 }
 
@@ -392,6 +406,7 @@ p.users-online span.number:after {
     margin-right: 10px;
     padding: 8px;
 }
+
 .content .commentarea .comment .comment,
 .content .commentarea .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment,
@@ -414,7 +429,7 @@ p.users-online span.number:after {
 
 .titlebox a {
     color: #31afe1;
-}    
+}
 
 .titlebox a.hover {
     display: none;
@@ -431,10 +446,11 @@ p.users-online span.number:after {
 .titlebox form.toggle,
 .leavecontributor-button,
 .leavemoderator {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     color: #333;
     padding: 5px;
 }
+
 
 /* Fix for stylesheet edit page */
 
@@ -448,7 +464,7 @@ p.users-online span.number:after {
 }
 
 .search-result-group {
-    background-color: rgba(250,250,250,0.75);
+    background-color: rgba(250, 250, 250, 0.75);
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
     border-radius: 0px;
     margin: 25px 0px 0px 35px !important;
@@ -463,14 +479,16 @@ form#search {
     margin-left: 154px;
 }
 
-#search input[type="submit"] {  /* Searchbox icon */
+#search input[type="submit"] {
+    /* Searchbox icon */
     position: relative;
     right: 22px;
 }
 
 #search input[type="text"] {
     font-family: Lato, arial, sans-serif;
-    background-color: #f9f9f9; /*#035165*/
+    background-color: #f9f9f9;
+    /*#035165*/
     border: 0px solid #0088BB;
     border-radius: 0px;
     font-size: 18px !important;
@@ -495,6 +513,7 @@ form#search {
     background: rgba(0, 0, 0, 0.02);
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.24);
 }
+
 
 /* submit buttons derived from Naut */
 
@@ -530,7 +549,6 @@ form#search {
     content: "Submit Link"
 }
 
-
 .submit-text .morelink:hover a:before {
     color: #31afe1;
     text-align: center;
@@ -557,8 +575,8 @@ form#search {
 }
 
 .sidebox.create {
-    display:none;
- /* margin-top: 100px;
+    display: none;
+    /* margin-top: 100px;
     background-color: transparent;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.24); */
 }
@@ -573,6 +591,7 @@ form#search {
     background-color: #333 !important;
     color: white;
 }
+
 
 /* custom subscribe button derived from Naut */
 
@@ -622,8 +641,8 @@ form#search {
 }
 
 .titlebox .fancy-toggle-button a.active.remove:hover {
-     font-size: 0; 
-     content: '';
+    font-size: 0;
+    content: '';
 }
 
 .titlebox .fancy-toggle-button a.active.remove:hover:before {
@@ -631,6 +650,7 @@ form#search {
     color: #31afe1;
     content: ":(";
 }
+
 
 /*********************
  Page Specific tweaks
@@ -650,13 +670,21 @@ div.wiki-page-content.md-container {
     border: 1px solid #333;
     border-radius: 5px;
     text-transform: uppercase;
-    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.64); 
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.64);
     width: 620px;
 }
 
 .submit-page .btn:hover {
+    font-size: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #333;
     color: #31afe1;
+}
+
+.submit-page .btn:hover:after {
+    font-size: 14px;
+    content: "Did you remember that piracy discussion here is strictly forbidden?";
 }
 
 .submit-page .btn:active {
@@ -676,26 +704,34 @@ div.wiki-page-content.md-container {
     margin-left: 0;
 }
 
-.submit-page .roundfield, .submit-page .infobar {
-    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74); 
+.submit-page .roundfield,
+.submit-page .infobar {
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
     width: 600px;
 }
 
-.submit-page .roundfield-content .input, .submit-page .roundfield-content .title, .submit-page .roundfield-content #sr-autocomplete { 
+.submit-page .roundfield-content .input,
+.submit-page .roundfield-content .title,
+.submit-page .roundfield-content #sr-autocomplete {
     width: 593px;
 }
 
+
 /* Search Page */
+
 #previoussearch #search input[type="text"] {
-    background-color: rgba(250,250,250,0.75);
+    background-color: rgba(250, 250, 250, 0.75);
     color: #555 !important;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
 }
 
+
 /* Shift sidebar back up when on Search page */
+
 body.search-page .side {
     padding-top: 354px;
 }
+
 
 /* Comment page */
 
@@ -737,7 +773,10 @@ body.search-page .side {
     color: #009c7a !important;
 }
 
-.thing .title { color: #1B61A8}
+.thing .title {
+    color: #1B61A8
+}
+
 .thing .title.loggedin.click:visited,
 .thing .title.loggedin.click,
 .thing .title.loggedin:visited,
@@ -746,20 +785,20 @@ body.search-page .side {
     color: #626785 !important;
 }
 
-.stickied .thumbnail { 
-    background: url(%%sticky%%) 10px no-repeat; 
+.stickied .thumbnail {
+    background: url(%%sticky%%) 10px no-repeat;
     margin-left: -10px;
 }
 
 .thumbnail {
-    margin-left: -10px;  
+    margin-left: -10px;
 }
 
 .thumbnail img {
     border-radius: 50%;
-    width:50px !important;
-    height:50px !important;
-    position: absolute;    
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
     margin-left: 10px !important;
 }
 
@@ -768,11 +807,12 @@ p.title {
 }
 
 .listing-page .entry {
-    border-bottom: 0px dotted #BBCCDD; /* Post separator */
+    border-bottom: 0px dotted #BBCCDD;
+    /* Post separator */
 }
 
 .footer-parent {
-  /*  background: url(%%footer%%); */
+    /*  background: url(%%footer%%); */
     background: linear-gradient(0deg, #111, #333, #111);
     margin-bottom: -100px;
     color: #fff;
@@ -784,10 +824,12 @@ p.bottommenu {
     color: #eee;
 }
 
-.footer-parent a, .footer-parent a:visited {
+.footer-parent a,
+.footer-parent a:visited {
     /* Footer */
     color: #fff !important;
 }
+
 
 /* Submit page */
 
@@ -819,10 +861,12 @@ input {
     margin-top: 35px;
     margin-bottom: 15px;
     box-shadow: none;
+    font-size: 0;
 }
 
 #link-desc:after {
-    content: " ABSOLUTELY ZERO TOLERANCE FOR PIRACY! This subreddit does not support discussion or links pertaining to gray area or illegal add-ons (such as genesis or icefilms) for Kodi made by 3rd party developers. Any such links or discussion will be removed. For discussion of those add-ons, feel free to visit /r/Addons4Kodi.";
+    font-size: 14px;
+    content: "ZERO TOLERANCE FOR PIRACY! This subreddit does not support discussion or links pertaining to gray area or illegal add-ons (such as genesis or icefilms) for Kodi made by 3rd party developers. Any such links or discussion will be removed. For discussion of those add-ons, feel free to visit unofficial subreddit /r/Addons4Kodi.";
 }
 
 #text-desc {
@@ -834,12 +878,13 @@ input {
     margin-top: 35px;
     margin-bottom: 15px;
     box-shadow: none;
+    font-size: 0;
 }
 
 #text-desc:after {
-    content: " ABSOLUTELY ZERO TOLERANCE FOR PIRACY! This subreddit does not support discussion or links pertaining to gray area or illegal add-ons (such as genesis or icefilms) for Kodi made by 3rd party developers. Any such links or discussion will be removed. For discussion of those add-ons, feel free to visit /r/Addons4Kodi.";
+    font-size: 14px;
+    content: "ZERO TOLERANCE FOR PIRACY! This subreddit does not support discussion or links pertaining to gray area or illegal add-ons (such as genesis or icefilms) for Kodi made by 3rd party developers. Any such links or discussion will be removed. For discussion of those add-ons, feel free to visit unofficial subreddit /r/Addons4Kodi.";
 }
-
 
 ul.tabmenu.formtab {
     /* Text / link tabs */
@@ -907,11 +952,12 @@ p#noresults {
     margin-left: 15px;
 }
 
-div.rounded.gold-accent.comment-visits-box { /* Box below comment box ("Highlight comments...") */
+div.rounded.gold-accent.comment-visits-box {
+    /* Box below comment box ("Highlight comments...") */
     margin-left: 10px;
     border-radius: 0;
     border: 0px solid #333;
-    background-color: rgba(250,250,250,0);
+    background-color: rgba(250, 250, 250, 0);
     color: #333;
 }
 
@@ -920,38 +966,39 @@ div.rounded.gold-accent.comment-visits-box { /* Box below comment box ("Highligh
 }
 
 .link .score {
-  text-align: center;
-  color: #31afe1; 
+    text-align: center;
+    color: #31afe1;
 }
 
 .link.odd {
-    background-color: rgba(100,100,255,0.03);
+    background-color: rgba(100, 100, 255, 0.03);
     padding-top: 9px;
     padding-bottom: 9px;
 }
 
-span.rank { /* Hide ordinals from posts */
+span.rank {
+    /* Hide ordinals from posts */
     display: none;
 }
 
-.entry .buttons li a { 
-    font-size: 13px; 
+.entry .buttons li a {
+    font-size: 13px;
     font-weight: 100;
 }
-.entry .buttons li a.comments { 
+
+.entry .buttons li a.comments {
     color: #31afe1;
     font-weight: 700;
 }
 
-.entry .tagline { 
-    font-style: italic; 
+.entry .tagline {
+    font-style: italic;
 }
 
-.entry .tagline a { 
-    font-style: normal; 
+.entry .tagline a {
+    font-style: normal;
     font-weight: 700;
 }
-
 
 .side .md h1,
 .side .md h2 {
@@ -960,21 +1007,32 @@ span.rank { /* Hide ordinals from posts */
     text-align: center;
     box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.34);
 }
+
 .side .titlebox .md h1,
 .side .titlebox .md h2 {
     margin: 15px -1px 15px -5px !important;
     padding: 7px;
 }
 
-.side .md h1 a, .side .md h2 a {
+.side .md h1 a,
+.side .md h2 a {
     color: #fff;
-} 
+}
+
 
 /* Padding for votes number so high number isn't half hidden */
+
 .midcol {
     padding-right: 12px;
 }
 
+
 /* Moderator nickname color - add new line for new mods and change name */
-.author[href$="/kibje"] { color: #009c7a; }
-.author[href$="/member_one"] { color: #009c7a; }
+
+.author[href$="/kibje"] {
+    color: #009c7a;
+}
+
+.author[href$="/member_one"] {
+    color: #009c7a;
+}
