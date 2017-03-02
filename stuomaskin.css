@@ -18,10 +18,14 @@ body {
     padding-top: 37px !important;
 }
 
+.comments-page #siteTable.linklisting {
+    padding-top: 17px !important;
+}
+
 .content #siteTable,
 .content .commentarea {
     /*spacing around link area and comment area*/
-    margin: 20px 350px 0px 12px;
+    margin: 20px 350px 20px 12px;
     padding: 34px 5px;
     /*inside the area*/
 }
@@ -54,11 +58,20 @@ body {
 
 /* Promoted-page "want to advertise?" -box */
 
+.promoted-page .reddit-infobar.md-container-small {
+    width: calc(100% - 362px);
+    border: none;
+    position: relative;
+    margin: 60px 0px 20px 12px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+}
+
 .reddit-infobar.md-container-small {
-    position: absolute;
-    margin-top: -88px;
-    margin-left: 280px;
-    z-index: 10;
+    width: calc(100% - 362px);
+    border: none;
+    position: relative;
+    margin: 20px 0px 20px 12px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
 }
 
 div#siteTable {
@@ -81,7 +94,7 @@ div#siteTable {
 }
 
 .dropdown-title {
-    color: #eee;
+    color: #99afe1;
 }
 
 h2 {
@@ -323,7 +336,7 @@ span.pagename.hover.redditname {
     padding-right: 5px;
     border: none;
     border-radius: 0;
-    margin-bottom: 92px;
+    margin-bottom: 93px;
     color: #fff;
 }
 
@@ -349,10 +362,20 @@ div.titlebox span.word {
     display: none;
 }
 
+p.users-online.fuzzed:before {
+    display: none;
+}
+
 span.subscribers:before {
     margin-left: 3px;
     margin-right: 15px;
     content: url(%%subicon%%);
+    display: none; /* Remove this and same from above if you want icons next to numbers */
+}
+
+.titlebox span.number {
+    color: #31afe1;
+    font-weight: 700;
 }
 
 span.subscribers:after {
@@ -360,14 +383,14 @@ span.subscribers:after {
     content: " happy subscribers"
 }
 
-p.users-online span.number:after {
+p.users-online.fuzzed:after {
     font-style: italic;
-    content: " redditors currently browsing"
+    content: " currently browsing"
 }
 
 .side:before {
     margin-left: 0px;
-    background: url(%%sidebar%%) 300px;
+    background: url(%%sidebarimg%%) 300px;
     content: "";
     position: absolute;
     top: 140px;
@@ -400,7 +423,7 @@ p.users-online span.number:after {
 .content .commentarea .comment .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background: #f5f5ff !important;
+    background: #fcfcfc !important;
     border: 1px solid #ccc;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -412,7 +435,7 @@ p.users-online span.number:after {
 .content .commentarea .comment .comment .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
 .content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background: #fff !important;
+    background: #f5f5f9 !important;
     border: 1px solid #ccc;
     padding: 8px;
 }
@@ -463,15 +486,15 @@ p.users-online span.number:after {
     margin-left: -150px !important;
 }
 
-.search-result-group {
-    background-color: rgba(250, 250, 250, 0.75);
-    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
-    border-radius: 0px;
-    margin: 25px 0px 0px 35px !important;
-    padding: 34px 5px;
-    /*inside the area*/
+.search-page .searchfacets {
+    display: none;
 }
 
+.search-submit-button {
+    padding: 11px !important;
+    background-color: #31afe1;
+}
+   
 form#search {
     border-radius: 0px;
     min-height: 40px;
@@ -514,6 +537,9 @@ form#search {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.24);
 }
 
+.linkinfo {
+    padding-left: 10px !important;
+}
 
 /* submit buttons derived from Naut */
 
@@ -716,22 +742,76 @@ div.wiki-page-content.md-container {
     width: 593px;
 }
 
-
 /* Search Page */
 
-#previoussearch #search input[type="text"] {
-    background-color: rgba(250, 250, 250, 0.75);
-    color: #555 !important;
-    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.74);
+div.listing.search-result-listing {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(250, 250, 250, 0.9);
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.34);
+    border-radius: 0px;
+    margin: 25px 200px 50px 35px !important;
+    width: calc(70vw - 200px) !important;
+    /*inside the area*/
 }
 
+.search-page .contents {
+    margin-right: -220px !important;
+}
+
+.search-result-group-header {
+    width: calc(70vw - 280px) !important;
+}
+
+
+.search-page .search-result:nth-child(odd) {
+    width: calc(70vw - 280px) !important;
+    background-color: rgba(100, 100, 255, 0.09);
+    padding-top: 15px;
+    padding-left:9px;
+    padding-bottom: 15px;
+}
+
+.search-page .search-result:nth-child(even) {
+    width: calc(70vw - 280px) !important;
+    padding-top: 9px;
+    padding-left:9px;
+    padding-bottom: 9px;
+}
+
+#previoussearch #search input[type="text"] {
+    background-color: rgba(250, 250, 250, 0.9);
+    color: #555 !important;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.34);
+}
+
+#previoussearch a {
+    font-weight: 900;
+    color: #333;
+}
+
+.search-expando.collapsed:before {
+    background: none;
+}
+
+.search-expando-button {
+    padding-top: 10px;
+}
+
+.search-expando-button-label-collapsed, .search-expando-button-label-expanded {
+    font-size: 16px;
+    color: #31afe1;
+    font-weight: 700;
+    background: rgba(0,0,0,0.8);
+    padding: 3px;
+    border-radius: 5px;
+}
 
 /* Shift sidebar back up when on Search page */
 
 body.search-page .side {
     padding-top: 354px;
 }
-
 
 /* Comment page */
 
@@ -972,6 +1052,12 @@ div.rounded.gold-accent.comment-visits-box {
 
 .link.odd {
     background-color: rgba(100, 100, 255, 0.03);
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.comments-page .link.odd {
+    background: none;
     padding-top: 9px;
     padding-bottom: 9px;
 }
