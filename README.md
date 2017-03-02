@@ -1,4 +1,4 @@
-# stuomaskin
+# stuomaskin 1.1
 A Reddit theme made for /r/Kodi
 
 I have tried to keep the theme at minimal, using as much as possible the original Reddit theme. If you find a feature that looks bad because of this, please let me know. I might have missed some more rare use-cases. I will clean up and comment the CSS more in case any interest is shown for the theme!
