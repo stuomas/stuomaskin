@@ -9,7 +9,8 @@ I have tried to keep the theme at minimal, using as much as possible the origina
 2. Download the images (header.png, logo.png, sidebar.png, sticky.png, subicon.png) and keep their original names. (Reddit permits only uploaded images, no links)
 3. Go to reddit.com/r/Kodi/about/stylesheet and paste the CSS into the editbox. Don't press save just yet
 4. Below the stylesheet edit box, upload the images
-5. Press save and you are done!
+5. Press save!
+6. Go to subreddit settings and set any sidebar text titles to h1 or h2 level adding # or ## in front of it in order to get stylized titles.
 
 <b>Image sizes</b>
 
