@@ -20,7 +20,6 @@ If you wish to change some of the images, the image sizes are as follows:
 - Logo: 230x75
 - Sidebar: 300x225 (4:3)
 - Sticky: 50x50
-- Subicon: 10x10
 
 
 <b>Development</b>
