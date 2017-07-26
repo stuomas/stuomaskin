@@ -1,5 +1,5 @@
 # stuomaskin 1.1
-A Reddit theme made originally for the [/r/Kodi](http://www.reddit.com/r/kodi) community. If you use it for your own subreddit, please feel free to do so, but try to modify so it won't look like a duplicate ;)
+A Reddit theme made originally for the [/r/Kodi](http://www.reddit.com/r/kodi) community. If you use it for your own subreddit, please feel free to do so, but I suggest to modify it properly so it won't look like a duplicate ;)
 
 I have tried to keep the theme at minimal, using as much as possible the original Reddit theme. If you find a feature that looks bad because of this, please let me know. I might have missed some more rare use-cases.
 
