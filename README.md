@@ -23,7 +23,7 @@ If you wish to change some of the images, the image sizes are as follows:
 
 
 <b>Development</b>
-I'm quite happy with the design, but the CSS is in some cases a bit hacky, what is of course sometimes needed when making stylesheets for a subreddit, but I'm working on cleaning it. If some CSS god want's to help, I'm happy to cooperate.
+I'm quite happy with the design, but the CSS is in some cases a bit hacky, what is of course sometimes needed when making stylesheets for a subreddit, but I'm working on cleaning it. If some CSS god wants to help, I'm happy to cooperate.
 
 
 
