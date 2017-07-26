@@ -28,4 +28,4 @@ I'm quite happy with the design, but the CSS is in some cases a bit hacky, what 
 
 
 <b>Disclaimer</b>
-I don't own rights to any of the pictures. Logo I made myself (idea stolen of course), sidebar picture is FanArt from Kodi forums, header I made myself using a FanArt pictrures from http://addons.kodi.tv/show/resource.images.skinbackgrounds.clear/.
+I don't own rights to any of the pictures. Logo I made myself (idea stolen of course), sidebar picture is FanArt from Kodi forums, header I made myself using fanart from Clear Design skin backgrounds.
